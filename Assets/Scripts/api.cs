@@ -17,22 +17,31 @@ public class api : MonoBehaviour
     public String boothNum, hashcode;
     public RawImage testImage;
 
+    void Awake()
+    {
+        dataLoad();
+    }
+
     void Start()
     {
-        result = Post("PHOTOBOOTH_ONE_163");
+
+        //res_CardManager.boothName
+
+        result = Post("PHOTOBOOTH_ONE_287");
     }
 
     public WWW Post(String boothNum)
     {
         WWW www;
-
+        Debug.Log(boothNum + ", "+ user.hashcode);
         string url = "https://render-api.zepeto.io/v2/graphics/zepeto/booth/" + boothNum + "?permanent=false";
         Hashtable postHeader = new Hashtable();
         postHeader.Add("authority", "render-api.zepeto.io");
         postHeader.Add("Accept", "application/json");
         postHeader.Add("Content-Type", "application/json");
 
-        String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ user.hashcode +"\"]}}";
+        //String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ user.hashcode +"\"]}}";
+        String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ hashcode +"\"]}}";
 
         var formData = System.Text.Encoding.UTF8.GetBytes(jsonStr);
 
@@ -58,5 +67,10 @@ public class api : MonoBehaviour
             Debug.Log(www.error);
         else
             testImage.texture = ((DownloadHandlerTexture)www.downloadHandler).texture;
+    }
+
+    public void dataLoad()
+    {
+        user.hashcode = PlayerPrefs.GetString("hashcode", user.hashcode);
     }
 }
