@@ -7,10 +7,39 @@ using UnityEngine.SceneManagement;
 public class start_startManager : MonoBehaviour
 {
     public Image button, UIbackground;
+    public RawImage logo;
+    public Texture[] logos;
+    public GameObject startText;
+
+    float time;
 
     void Start()
     {
         UIbackground.gameObject.SetActive(false);
+
+        //button.gameObject.SetActive(false);
+        //logo.gameObject.SetActive(false);
+        //startText.gameObject.SetActive(false);
+    }
+
+    public void Update()
+    {
+        // 문구 깜빡깜빡
+        if (time < 0.5f)
+            startText.GetComponent<Text>().color = new Color(1, 1, 1, 1 - time);
+        else
+        {
+            startText.GetComponent<Text>().color = new Color(1, 1, 1, time);
+            if (time > 1f) time = 0;
+        }
+        time += Time.deltaTime;
+
+        // 카드 회전
+        logo.transform.Rotate(Vector3.up * 100 * Time.deltaTime);
+        if (logo.transform.eulerAngles.y > 90 && logo.transform.eulerAngles.y < 270)
+            logo.texture = logos[1];
+        else
+            logo.texture = logos[0];
     }
 
     public void nextScene()
