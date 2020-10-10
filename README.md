@@ -8,9 +8,9 @@
 <img src="https://user-images.githubusercontent.com/53745427/95666534-87b8cd00-0b95-11eb-87dd-ba9be654706d.png" width="200">
 </p>
 
-## ZEPETO API:   
-https://zepeto-api.firebaseapp.com/?v   
-https://render-api.zepeto.io/v2/swagger/
+## ZEPETO-API   
+- [API Docs](https://zepeto-api.firebaseapp.com/?v)   
+- [Swagger](https://render-api.zepeto.io/v2/swagger/)
 
 ## Team
 - [문지현](https://github.com/solidcella) 
