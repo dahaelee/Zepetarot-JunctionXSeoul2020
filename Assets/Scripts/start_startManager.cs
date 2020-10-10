@@ -16,10 +16,6 @@ public class start_startManager : MonoBehaviour
     void Start()
     {
         UIbackground.gameObject.SetActive(false);
-
-        //button.gameObject.SetActive(false);
-        //logo.gameObject.SetActive(false);
-        //startText.gameObject.SetActive(false);
     }
 
     public void Update()
