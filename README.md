@@ -1,16 +1,18 @@
-# ZEPETATOT
-## Tarot Card App with ZEPETO's Render API
-## Junction X Seoul 2020 Track4_naver-z
+# Junction X Seoul 2020 Track4_naver-z
+<p><img src="https://user-images.githubusercontent.com/53745427/95666531-8091bf00-0b95-11eb-8838-47cf7ee0e8bf.png" width="400">
 
-<p><img src="https://user-images.githubusercontent.com/53745427/95666454-c0a47200-0b94-11eb-874c-9408da0e7d5e.png" width="200">
-<img src="https://user-images.githubusercontent.com/53745427/95666465-da45b980-0b94-11eb-9c0f-5143ac8cb3be.png" width="200">
+# ZEPETATOT
+Tarot Card App with ZEPETO's Render API
+
+<p><img src="https://user-images.githubusercontent.com/53745427/95666532-85567300-0b95-11eb-902e-2beb2d5d0b1c.png" width="200">
+<img src="https://user-images.githubusercontent.com/53745427/95666534-87b8cd00-0b95-11eb-87dd-ba9be654706d.png" width="200">
 </p>
 
-ZEPETO API:   
+## ZEPETO API:   
 https://zepeto-api.firebaseapp.com/?v   
 https://render-api.zepeto.io/v2/swagger/
 
-### Team
+## Team
 - [문지현](https://github.com/solidcella) 
 - [이다해](https://github.com/dahaelee)
 - [임은정](https://github.com/minie12)
