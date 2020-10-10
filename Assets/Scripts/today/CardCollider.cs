@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class CardCollider : MonoBehaviour
 {
@@ -14,14 +16,14 @@ public class CardCollider : MonoBehaviour
         
     }
 
-    public void OnMouseUpAsButton()
+    public void CardOut()
     {
         this.GetComponent<RectTransform>().localPosition += Vector3.down * 150.0f;
         bool doubleClicked = totManager.GetComponent<today_todayManager>().checkDoubleClick(this.gameObject.name);
 
         if (doubleClicked) 
         { 
-            Vector3 targetPoint = new Vector3(360, 600, 0);
+            Vector3 targetPoint = new Vector3(230, 390, 0);
             this.gameObject.transform.parent = GameObject.Find("Canvas").transform;
             StartCoroutine(CardSizeUp(this.transform, transform.position, targetPoint, 0.5f));
         }
@@ -32,6 +34,8 @@ public class CardCollider : MonoBehaviour
     {
         float i = 0.0f;
         float rate = 1.0f / time;
+        darkBG.SetActive(true);
+
         while (i < 1.0)
         {
             yield return new WaitForEndOfFrame();
@@ -39,7 +43,10 @@ public class CardCollider : MonoBehaviour
             thisTransform.position = Vector3.Lerp(startPos, endPos, i);
             if(thisTransform.localScale.x < 4f)
                 thisTransform.localScale += new Vector3(0.9f, 0.9f, 0);
-        }
-        darkBG.SetActive(true);
+            
+        }        
+
+        yield return new WaitForSeconds(0.8f);
+        SceneManager.LoadScene("result");
     }
 }
