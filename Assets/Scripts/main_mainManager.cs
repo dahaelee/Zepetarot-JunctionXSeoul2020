@@ -40,6 +40,11 @@ public class main_mainManager : MonoBehaviour
         StartCoroutine("fadeoutAndLogin");
     }
 
+    public void tadayFortune() 
+    {
+        StartCoroutine("fadeoutAndPrickcard");
+    }
+
     public IEnumerator fadeoutAndLogin()
     {
         float fade_time = 0.5f, start = 0.5f, end = 0.7f, time = 0f;
