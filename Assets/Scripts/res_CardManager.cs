@@ -17,6 +17,11 @@ public class res_CardManager : MonoBehaviour
     float time = 0;
     float fade = 0.0f;
 
+    private void Awake()
+    {
+        dataLoad();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -93,5 +98,10 @@ public class res_CardManager : MonoBehaviour
         }
 
         SceneManager.LoadScene("main");
+    }
+
+    public void dataLoad()
+    {
+        user.hashcode = PlayerPrefs.GetString("hashcode", user.hashcode);
     }
 }

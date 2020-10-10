@@ -14,18 +14,9 @@ public class today_todayManager : MonoBehaviour
     // card related
     string pickedCard;
 
-    void Awake()
+    private void Awake()
     {
-        /*
-        // Make More Cards
-        for (int i = 0; i < 10; i++)
-        {
-            //GameObject childObject = Instantiate(card, new Vector3(i * 10.0F, 0, 0), Quaternion.identity) as GameObject;
-            GameObject childObject = (GameObject)Instantiate(card);
-            childObject.transform.parent = card.transform;
-            childObject.GetComponent<RectTransform>().localPosition += Vector3.right * 5.0f;
-        }
-        */
+        dataLoad();
     }
 
     void Start()
@@ -33,8 +24,7 @@ public class today_todayManager : MonoBehaviour
         UIbackground.gameObject.SetActive(false);
 
         UImanager.allUIoff();
-        //hashcode.GetComponent<Text>().text = user.hashcode.ToString();
-        hashcode.GetComponent<Text>().text = "JJJJJJ";
+        hashcode.GetComponent<Text>().text = user.hashcode.ToString();
     }
     public void setting()
     {
@@ -96,5 +86,10 @@ public class today_todayManager : MonoBehaviour
 
             pickedCard = null;
         }
+    }
+
+    public void dataLoad()
+    {
+        user.hashcode = PlayerPrefs.GetString("hashcode", user.hashcode);
     }
 }

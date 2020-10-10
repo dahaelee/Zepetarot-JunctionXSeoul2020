@@ -133,7 +133,6 @@ GameObject:
   - component: {fileID: 31634604}
   - component: {fileID: 31634603}
   - component: {fileID: 31634602}
-  - component: {fileID: 31634601}
   - component: {fileID: 31634605}
   m_Layer: 5
   m_Name: Image (4)
@@ -161,32 +160,6 @@ RectTransform:
   m_AnchoredPosition: {x: -84, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &31634601
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 31634599}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &31634602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -255,7 +228,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 31634602}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -674,7 +647,6 @@ GameObject:
   - component: {fileID: 239468055}
   - component: {fileID: 239468054}
   - component: {fileID: 239468053}
-  - component: {fileID: 239468052}
   - component: {fileID: 239468056}
   m_Layer: 5
   m_Name: Image (2)
@@ -702,32 +674,6 @@ RectTransform:
   m_AnchoredPosition: {x: -219, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &239468052
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 239468050}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &239468053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,7 +742,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 239468053}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1078,7 +1024,6 @@ GameObject:
   - component: {fileID: 528080385}
   - component: {fileID: 528080384}
   - component: {fileID: 528080383}
-  - component: {fileID: 528080382}
   - component: {fileID: 528080386}
   m_Layer: 5
   m_Name: Image (5)
@@ -1106,32 +1051,6 @@ RectTransform:
   m_AnchoredPosition: {x: -14, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &528080382
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 528080380}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &528080383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1200,7 +1119,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 528080383}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1298,7 +1217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.19607843}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.24705882}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1361,7 +1280,6 @@ GameObject:
   - component: {fileID: 671375781}
   - component: {fileID: 671375780}
   - component: {fileID: 671375779}
-  - component: {fileID: 671375778}
   - component: {fileID: 671375782}
   m_Layer: 5
   m_Name: Image (3)
@@ -1389,32 +1307,6 @@ RectTransform:
   m_AnchoredPosition: {x: -154, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &671375778
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 671375776}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &671375779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1483,7 +1375,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 671375779}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1648,7 +1540,6 @@ GameObject:
   - component: {fileID: 1106191978}
   - component: {fileID: 1106191977}
   - component: {fileID: 1106191976}
-  - component: {fileID: 1106191975}
   - component: {fileID: 1106191979}
   m_Layer: 5
   m_Name: Image (8)
@@ -1676,32 +1567,6 @@ RectTransform:
   m_AnchoredPosition: {x: 203, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1106191975
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1106191973}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1106191976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1770,7 +1635,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1106191976}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1792,7 +1657,6 @@ GameObject:
   - component: {fileID: 1144699199}
   - component: {fileID: 1144699198}
   - component: {fileID: 1144699197}
-  - component: {fileID: 1144699196}
   - component: {fileID: 1144699200}
   m_Layer: 5
   m_Name: Image (10)
@@ -1820,32 +1684,6 @@ RectTransform:
   m_AnchoredPosition: {x: 344, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1144699196
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1144699194}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1144699197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1914,7 +1752,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1144699197}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1936,7 +1774,6 @@ GameObject:
   - component: {fileID: 1250562293}
   - component: {fileID: 1250562292}
   - component: {fileID: 1250562291}
-  - component: {fileID: 1250562290}
   - component: {fileID: 1250562294}
   m_Layer: 5
   m_Name: Image (6)
@@ -1964,32 +1801,6 @@ RectTransform:
   m_AnchoredPosition: {x: 62, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1250562290
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1250562288}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1250562291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,7 +1869,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1250562291}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2080,7 +1891,6 @@ GameObject:
   - component: {fileID: 1341093655}
   - component: {fileID: 1341093654}
   - component: {fileID: 1341093653}
-  - component: {fileID: 1341093652}
   - component: {fileID: 1341093656}
   m_Layer: 5
   m_Name: Image (7)
@@ -2108,32 +1918,6 @@ RectTransform:
   m_AnchoredPosition: {x: 127, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1341093652
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341093650}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1341093653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,7 +1986,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1341093653}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2477,7 +2261,6 @@ GameObject:
   - component: {fileID: 1657372279}
   - component: {fileID: 1657372283}
   - component: {fileID: 1657372282}
-  - component: {fileID: 1657372280}
   - component: {fileID: 1657372281}
   - component: {fileID: 1657372284}
   m_Layer: 5
@@ -2506,32 +2289,6 @@ RectTransform:
   m_AnchoredPosition: {x: -284, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1657372280
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1657372278}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1657372281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2600,7 +2357,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1657372281}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2622,7 +2379,6 @@ GameObject:
   - component: {fileID: 1758690163}
   - component: {fileID: 1758690162}
   - component: {fileID: 1758690161}
-  - component: {fileID: 1758690160}
   - component: {fileID: 1758690164}
   m_Layer: 5
   m_Name: Image
@@ -2650,32 +2406,6 @@ RectTransform:
   m_AnchoredPosition: {x: -344, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1758690160
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1758690158}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1758690161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2744,7 +2474,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1758690161}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3041,7 +2771,6 @@ GameObject:
   - component: {fileID: 1858847992}
   - component: {fileID: 1858847991}
   - component: {fileID: 1858847990}
-  - component: {fileID: 1858847989}
   - component: {fileID: 1858847993}
   m_Layer: 5
   m_Name: Image (9)
@@ -3069,32 +2798,6 @@ RectTransform:
   m_AnchoredPosition: {x: 268, y: -18}
   m_SizeDelta: {x: 160, y: 240}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1858847989
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858847987}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 124.7, y: 174.3}
-  m_EdgeRadius: 0
 --- !u!114 &1858847990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3163,7 +2866,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1858847990}
-          m_MethodName: OnMouseUpAsButton
+          m_MethodName: CardOut
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
