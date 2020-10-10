@@ -185,7 +185,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &31634602
 MonoBehaviour:
@@ -711,7 +711,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &239468053
 MonoBehaviour:
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8402313, g: 0.8113208, b: 1, a: 0.74509805}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -984,8 +984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: 210}
-  m_SizeDelta: {x: 318, y: 439}
+  m_AnchoredPosition: {x: 19, y: 253}
+  m_SizeDelta: {x: 470, y: 470}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374754095
 MonoBehaviour:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 279db881c8002054b8d971da8a814256, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b236ab33cf512c44bbd09154574ed2f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1086,7 +1086,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &528080383
 MonoBehaviour:
@@ -1340,7 +1340,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &671375779
 MonoBehaviour:
@@ -1598,7 +1598,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1106191976
 MonoBehaviour:
@@ -1713,7 +1713,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1144699197
 MonoBehaviour:
@@ -1828,7 +1828,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1250562291
 MonoBehaviour:
@@ -1943,7 +1943,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1341093653
 MonoBehaviour:
@@ -2312,7 +2312,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1657372281
 MonoBehaviour:
@@ -2427,7 +2427,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1758690161
 MonoBehaviour:
@@ -2561,7 +2561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283, y: 808}
+  m_AnchoredPosition: {x: -283, y: 571}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829281555
@@ -2724,7 +2724,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 638.9781
+  orthographic size: 409.25714
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2748,8 +2748,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1837227798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 361, y: 640, z: -250}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 231, y: 411, z: -250}
+  m_LocalScale: {x: 0.73749, y: 0.47549, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2817,7 +2817,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 106.33852, y: 158.37053}
+  m_Size: {x: 124.7, y: 174.3}
   m_EdgeRadius: 0
 --- !u!114 &1858847990
 MonoBehaviour:
