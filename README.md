@@ -1,5 +1,4 @@
 # Junction X Seoul 2020 
-### Track4_naver-z
 <p><img src="https://user-images.githubusercontent.com/53745427/95666531-8091bf00-0b95-11eb-8838-47cf7ee0e8bf.png" width="500">
 
 # ZEPETATOT
