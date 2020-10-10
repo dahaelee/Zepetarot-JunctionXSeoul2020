@@ -7,8 +7,8 @@ using UnityEngine.SceneManagement;
 public class start_startManager : MonoBehaviour
 {
     public Image button, UIbackground;
-    public RawImage logo;
-    public Texture[] logos;
+    public Image logo;
+    public Sprite[] logos;
     public GameObject startText;
 
     float time;
@@ -37,9 +37,9 @@ public class start_startManager : MonoBehaviour
         // 카드 회전
         logo.transform.Rotate(Vector3.up * 100 * Time.deltaTime);
         if (logo.transform.eulerAngles.y > 90 && logo.transform.eulerAngles.y < 270)
-            logo.texture = logos[1];
+            logo.sprite = logos[1];
         else
-            logo.texture = logos[0];
+            logo.sprite = logos[0];
     }
 
     public void nextScene()
