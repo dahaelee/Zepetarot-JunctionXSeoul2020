@@ -36,6 +36,7 @@ public class main_mainManager : MonoBehaviour
     public void logout()
     {
         PlayerPrefs.DeleteAll();
+        UImanager.UIoff(UI_manager.UIstate.setting);
         StartCoroutine("fadeoutAndLogin");
     }
 
