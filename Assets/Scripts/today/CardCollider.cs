@@ -10,12 +10,6 @@ public class CardCollider : MonoBehaviour
     public GameObject totManager;
     public GameObject darkBG;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void CardOut()
     {
         this.GetComponent<RectTransform>().localPosition += Vector3.down * 150.0f;
@@ -23,7 +17,7 @@ public class CardCollider : MonoBehaviour
 
         if (doubleClicked) 
         { 
-            Vector3 targetPoint = new Vector3(230, 390, 0);
+            Vector3 targetPoint = new Vector3(350, 590, 0);
             this.gameObject.transform.parent = GameObject.Find("Canvas").transform;
             StartCoroutine(CardSizeUp(this.transform, transform.position, targetPoint, 0.5f));
         }
@@ -46,7 +40,7 @@ public class CardCollider : MonoBehaviour
             
         }        
 
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.9f);
         SceneManager.LoadScene("result");
     }
 }
