@@ -7,10 +7,14 @@ using UnityEngine.SceneManagement;
 public class res_CardManager : MonoBehaviour
 {
     public int cardNum;
+
     public Image card_bgrd;
     public Sprite[] bgrd_list;
     public Image UIbackground;
     public UI_manager UImanager;
+    public GameObject API;
+
+    public Text hashcode;
 
     public Text head, script;
 
@@ -29,6 +33,9 @@ public class res_CardManager : MonoBehaviour
 
         UImanager.allUIoff();
 
+        //hashcode.GetComponent<Text>().text = user.hashcode.ToString();
+
+
         List<Dictionary<string,object>> data = CSVReader.Read ("cardData");
 
         // data[cardNum]["cardNUM"] : 0~4
@@ -37,17 +44,20 @@ public class res_CardManager : MonoBehaviour
         // data[cardNum]["script"] : 설명
 
 
-        Debug.Log("");
 
         //랜덤으로 카드종류 정하고 배경 출력
         cardNum = Random.Range(0,5);
         card_bgrd.sprite = bgrd_list[cardNum];
-        Debug.Log(cardNum);
+
+        //Debug.Log((string) data[cardNum]["boothName"]);
+
+        //API.GetComponent<api>().Post((string) data[cardNum]["boothName"]);
 
         // 설명 출력
         head.text = data[cardNum]["cardName"] + " 카드";
         script.text = (string)data[cardNum]["script"];
         
+        //Debug.Log(data[cardNum]["boothName"]);
 
     }
 
