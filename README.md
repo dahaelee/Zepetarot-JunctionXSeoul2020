@@ -13,6 +13,6 @@
 - [Swagger](https://render-api.zepeto.io/v2/swagger/)
 
 ## Team
-- [문지현](https://github.com/solidcella) 
+- [문지현](https://github.com/solidcellaMoon) 
 - [이다해](https://github.com/dahaelee)
 - [임은정](https://github.com/minie12)
