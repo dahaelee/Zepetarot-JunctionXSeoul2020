@@ -19,7 +19,7 @@ public class CardCollider : MonoBehaviour
 
         if (doubleClicked) 
         { 
-            Vector3 targetPoint = new Vector3(350, 590, 0);
+            Vector3 targetPoint = new Vector3(Screen.width/2, Screen.height/2, 0);
             this.gameObject.transform.parent = GameObject.Find("Canvas").transform;
             StartCoroutine(CardSizeUp(this.transform, transform.position, targetPoint, 0.5f));
         }
