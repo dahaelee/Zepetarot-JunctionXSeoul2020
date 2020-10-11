@@ -14,7 +14,7 @@ public class api : MonoBehaviour
 {
     public WWW result;
     public String imgUrl;
-    public String boothNum, hashcode;
+    public String hashcode;
     public RawImage testImage;
 
     void Awake()
@@ -27,21 +27,20 @@ public class api : MonoBehaviour
 
         //res_CardManager.boothName
 
-        result = Post("PHOTOBOOTH_ONE_287");
+        result = Post(287);
     }
 
-    public WWW Post(String boothNum)
+    public WWW Post(int boothNum)
     {
         WWW www;
         Debug.Log(boothNum + ", "+ user.hashcode);
-        string url = "https://render-api.zepeto.io/v2/graphics/zepeto/booth/" + boothNum + "?permanent=false";
+        string url = "https://render-api.zepeto.io/v2/graphics/zepeto/booth/PHOTOBOOTH_ONE_" + boothNum.ToString() + "?permanent=false";
         Hashtable postHeader = new Hashtable();
         postHeader.Add("authority", "render-api.zepeto.io");
         postHeader.Add("Accept", "application/json");
         postHeader.Add("Content-Type", "application/json");
 
-        //String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ user.hashcode +"\"]}}";
-        String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ hashcode +"\"]}}";
+        String jsonStr = "{\"type\":\"booth\",\"width\":1024,\"target\":{\"hashCodes\":[\""+ user.hashcode +"\"]}}";
 
         var formData = System.Text.Encoding.UTF8.GetBytes(jsonStr);
 

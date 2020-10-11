@@ -1741,7 +1741,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imgUrl: 
-  boothNum: 
   hashcode: 
   testImage: {fileID: 1639255397}
 --- !u!1 &1645961663
