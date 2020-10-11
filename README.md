@@ -6,8 +6,8 @@
 <p><img src="https://user-images.githubusercontent.com/53745427/95666532-85567300-0b95-11eb-902e-2beb2d5d0b1c.png" width="200">
 <img src="https://user-images.githubusercontent.com/53745427/95666534-87b8cd00-0b95-11eb-87dd-ba9be654706d.png" width="200">
 </p>
-Come and play with ZEPETAROT!
-Ask whenever you are curious!
+Come and play with ZEPETAROT!   
+Ask whenever you are curious!   
 ZEPETAROT will tell you about your today's fortune!
 
 ## Demo Video
