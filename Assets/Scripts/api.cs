@@ -16,6 +16,7 @@ public class api : MonoBehaviour
     public String imgUrl;
     public String hashcode;
     public RawImage testImage;
+    public int cardNum;
 
     void Awake()
     {
@@ -27,7 +28,11 @@ public class api : MonoBehaviour
 
         //res_CardManager.boothName
 
-        result = Post(287);
+        List<Dictionary<string,object>> data = CSVReader.Read ("cardData");
+
+        cardNum = res_CardManager.cardNum;
+
+        result = Post((int)data[cardNum]["boothName"]);
     }
 
     public WWW Post(int boothNum)

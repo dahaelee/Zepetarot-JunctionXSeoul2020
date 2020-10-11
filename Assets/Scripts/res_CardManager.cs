@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class res_CardManager : MonoBehaviour
 {
-    public int cardNum;
+    static public int cardNum;
 
     public Image card_bgrd;
     public Sprite[] bgrd_list;
@@ -22,6 +22,7 @@ public class res_CardManager : MonoBehaviour
     private void Awake()
     {
         dataLoad();
+        cardNum = Random.Range(0,5);
     }
 
     // Start is called before the first frame update
@@ -42,12 +43,11 @@ public class res_CardManager : MonoBehaviour
 
 
         //랜덤으로 카드종류 정하고 배경 출력
-        cardNum = Random.Range(0,5);
         card_bgrd.sprite = bgrd_list[cardNum];
 
         //Debug.Log((string) data[cardNum]["boothName"]);
 
-        //API.GetComponent<api>().Post((string) data[cardNum]["boothName"]);
+        //API.GetComponent<api>().Post(data[cardNum]["boothName"]]);
 
         // 설명 출력
         head.text = data[cardNum]["cardName"] + " 카드";
