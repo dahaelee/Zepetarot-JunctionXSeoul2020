@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 
 public class CardCollider : MonoBehaviour
 {
     public GameObject totManager;
     public GameObject darkBG;
+    public GameObject CardPack;
 
     public void CardOut()
     {
@@ -36,7 +38,7 @@ public class CardCollider : MonoBehaviour
             i = i + (Time.deltaTime * rate);
             thisTransform.position = Vector3.Lerp(startPos, endPos, i);
             if(thisTransform.localScale.x < 4f)
-                thisTransform.localScale += new Vector3(0.9f, 0.9f, 0);
+                thisTransform.localScale += new Vector3(0.8f, 0.8f, 0);
             
         }        
 

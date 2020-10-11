@@ -25,6 +25,8 @@ public class today_todayManager : MonoBehaviour
 
         UImanager.allUIoff();
         hashcode.GetComponent<Text>().text = user.hashcode.ToString();
+
+        StartCoroutine("SpreadCards");
     }
     public void setting()
     {
@@ -71,7 +73,6 @@ public class today_todayManager : MonoBehaviour
             }
 
             pickedCard = tempCard;
-            Debug.Log("Diff");
             return false;
         }
     }
@@ -87,8 +88,24 @@ public class today_todayManager : MonoBehaviour
             pickedCard = null;
         }
     }
+        
+    IEnumerator SpreadCards()
+    {
+        yield return new WaitForSeconds(0.8f);
+        GameObject CardDeck = GameObject.Find("CardPack");
 
-    public void dataLoad()
+        float i = 0.0f;
+        float rate = 1.3f;
+
+        while (i < 1.0)
+        {
+            yield return new WaitForEndOfFrame();
+            i = i + (Time.deltaTime * rate)*1.7f;
+            CardDeck.GetComponent<GridLayoutGroup>().spacing = Vector2.Lerp(new Vector2(-120,0), new Vector2(15,0), i);
+        }
+    }
+
+        public void dataLoad()
     {
         user.hashcode = PlayerPrefs.GetString("hashcode", user.hashcode);
     }
