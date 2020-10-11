@@ -11,7 +11,7 @@ public class res_CardManager : MonoBehaviour
     public Sprite[] bgrd_list;
     public Image UIbackground;
     public UI_manager UImanager;
-
+    public Text hashcode;
     public Text head, script;
 
     float time = 0;
@@ -26,8 +26,8 @@ public class res_CardManager : MonoBehaviour
     void Start()
     {
         UIbackground.gameObject.SetActive(false);
-
         UImanager.allUIoff();
+        hashcode.GetComponent<Text>().text = user.hashcode.ToString();
 
         List<Dictionary<string,object>> data = CSVReader.Read ("cardData");
 
